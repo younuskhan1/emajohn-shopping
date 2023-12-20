@@ -21,7 +21,6 @@
 .review-order-button {
   align-items: center;
   background-clip: padding-box;
-  background-color: #fa6400;
   border: 1px solid transparent;
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -41,9 +40,6 @@
   text-decoration: none;
   transition: all 250ms;
   user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
   width: 100%;
 }
 
@@ -51,7 +47,6 @@
 .review-order-button:hover
 .clear-cart-button:focus,
 .review-order-button:focus {
-  background-color: #fb8332;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
@@ -62,7 +57,6 @@
 
 .clear-cart-button:active,
 .review-order-button:active {
-  background-color: #c85000;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
@@ -78,6 +72,8 @@
 @media screen and (max-width:769px){
     .calculation-container{
         width: 100%;
+        height: auto;
+        padding-bottom: 25px;
         margin: auto;
         position: static;
     }
