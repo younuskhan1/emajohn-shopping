@@ -8,7 +8,7 @@ const Card = ({product}) => {
                 <img className="card-image" src={img} alt="" />
                 <div style={{marginTop:"20px", lineHeight: "1.8em"}}>
                     <h3 style={{textAlign:"left"}}>{name}</h3>
-                    <p style={{textAlign:"left",fontSize:"18px", fontWeight:"bolder"}}> Price : {price}</p>
+                    <p style={{textAlign:"left",fontSize:"18px", fontWeight:"bolder"}}> Price : <span>$</span> {price}</p>
                     <p style={{textAlign:"left",fontSize:"18px", fontWeight:"bolder"}}> Manufacturer : {seller}</p>
                     <p style={{textAlign:"left",fontSize:"18px", fontWeight:"bolder"}}> Ratings : {ratings} stars </p>
                 </div>   

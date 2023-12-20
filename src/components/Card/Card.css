@@ -1,5 +1,5 @@
 .card-container{
-    width: 300px;
+    width: 290px;
     height: 520px;
     border: 2px solid #95A0A7;
     border-radius: 12px;
@@ -20,7 +20,7 @@
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: rgb(41, 4, 41);
+  color: rgb(31, 2, 31);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   display: block;
