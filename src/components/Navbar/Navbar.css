@@ -18,3 +18,23 @@
     color: #FF9900;
     cursor: pointer;
 }
+
+@media screen and (max-width:640px) {
+    .navParentDiv {
+     flex-direction: column;
+     height: auto;
+     padding:20px 20px;
+    }
+    .navItems{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .navItems li{
+        background-color: aqua;
+        text-align: center;
+        padding: 10px 12px;
+        border-radius: 10px;
+        color: black;
+        font-weight: 900;
+    }
+  }
