@@ -13,7 +13,7 @@ const Card = ({product}) => {
                     <p style={{textAlign:"left",fontSize:"18px", fontWeight:"bolder"}}> Ratings : {ratings} stars </p>
                 </div>   
             </div>
-            <p className='card-button'>Add To Cart</p>
+            <p className='card-button'>Add To Cart <i class="fa-solid fa-cart-plus"></i></p>
         </div>
     );
 };
