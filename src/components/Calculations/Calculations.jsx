@@ -5,7 +5,7 @@ const Calculations = () => {
         <div className="calculation-container">
             <h2 style={{paddingTop:"20px", paddingBottom:"20px", color:"red", borderBottom:"3px solid white"}}>Order Summary</h2>
             <div className='text-summary-order'>
-                <p>selected Items : $ </p>
+                <p>Selected Items : $ </p>
                 <p>Total Price : $ </p>
                 <p>Total Shipping Charges : $ </p>
                 <p>Total Tax : $ </p>

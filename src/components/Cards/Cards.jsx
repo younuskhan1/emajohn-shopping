@@ -2,7 +2,6 @@ import Card from '../Card/Card';
 import './Cards.css'
 
 const Cards = ({products}) => {
-
     return (
         <div className="cards-container">
             {
