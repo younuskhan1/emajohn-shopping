@@ -1,0 +1,7 @@
+.cards-and-calculations{
+    width: 95%;
+    padding: 30px 5px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
