@@ -2,5 +2,28 @@
     text-align: center;
     width: 80%;
     height: auto;
-    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: auto;
 }
+
+@media screen and (max-width:1025px){
+    .cards-container{
+        grid-template-columns: repeat( 2, 1fr);
+    }
+}
+@media screen and (max-width:769px){
+    .cards-container{
+        width: auto;
+        grid-template-columns: repeat( 2, 1fr);
+    }
+}
+
+@media screen and (max-width:640px){
+    .cards-container{
+        width: auto;
+        grid-template-columns: repeat( 1, 1fr);
+    }
+}
+

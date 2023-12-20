@@ -1,6 +1,13 @@
 .calculation-container{
     width: 20%;
     text-align: center;
-    height: auto;
+    height: 100vh;
     background-color: aquamarine;
+}
+
+@media screen and (max-width:769px){
+    .calculation-container{
+        width: 100%;
+        margin: auto;
+    }
 }

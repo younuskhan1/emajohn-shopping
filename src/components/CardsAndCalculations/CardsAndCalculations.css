@@ -5,3 +5,14 @@
     display: flex;
     justify-content: space-between;
 }
+/* @media screen and (max-width:640px){
+    .cards-and-calculations{
+        flex-direction: column-reverse;
+    }
+} */
+@media screen and (max-width:769px){
+    .cards-and-calculations{
+        flex-direction: column-reverse;
+    }
+}
+

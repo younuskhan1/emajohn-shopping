@@ -1,0 +1,16 @@
+.card-container{
+    width: 300px;
+    height: 509px;
+    border: 2px solid #95A0A7;
+    border-radius: 10px;
+    padding: 7px;
+}
+.card-image{
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (max-width:769px){
+    .card-container{
+        width: auto;
+    }
+}
