@@ -1,5 +1,17 @@
 {
   "dependencies": {
-    "prop-types": "^15.8.1"
-  }
+    "all": "^0.0.0",
+    "package.json": "^0.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "name": "emajohn-shopping",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
