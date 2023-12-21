@@ -11,8 +11,8 @@ const Calculations = () => {
                 <p>Total Tax : $ </p>
                 <p style={{fontSize:"22px", paddingTop:"20px"}}>Grand Total : $ </p>
             </div>
-            <p className='clear-cart-button' style={{backgroundColor:"#FF3030", margin: "20px 0px"}}>Clear Cart <i class="fa-solid fa-trash-can"></i></p>
-            <p className='review-order-button' style={{backgroundColor:"#FF9900"}}>Review Order <i class="fa-solid fa-arrow-right"></i></p>
+            <p className='clear-cart-button' style={{backgroundColor:"#FF3030", margin: "20px 0px"}}>Clear Cart <i className="fa-solid fa-trash-can"></i></p>
+            <p className='review-order-button' style={{backgroundColor:"#FF9900"}}>Review Order <i className="fa-solid fa-arrow-right"></i></p>
         </div>
     );
 };

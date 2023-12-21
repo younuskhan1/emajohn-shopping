@@ -5,7 +5,7 @@ const Cards = ({products}) => {
     return (
         <div className="cards-container">
             {
-               products.map(product=><Card product={product}></Card>)
+               products.map((product, idx) =><Card key={idx} product={product}></Card>)
             }
         </div>
     );
