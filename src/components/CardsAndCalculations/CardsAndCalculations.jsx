@@ -21,6 +21,23 @@ const CardsAndCalculations = () => {
         .then(data=> setProducts(data))
     }, []);
 
+    useEffect(()=>{
+        // console.log("called the useEffects", products.length);
+        if(products.length > 0){
+            const getItemsOfLS = getItemsFromLocalStorage();
+            let product = [];
+            for (let id of getItemsOfLS){
+                // console.log(id);
+                const itemsLS = products.find(item=> item.id === id);
+                // console.log(itemsLS);
+                if(itemsLS){
+                 product.push(itemsLS);
+                }
+            }
+            setNumberOfItems(product);
+        }   
+    },[products])
+
     const cardHandleButton = (product)=>{
     // console.log(product);
         if (numberOfItems.includes(product.id)){
@@ -40,10 +57,6 @@ const CardsAndCalculations = () => {
     const fixedGrandTotal = grandTotal.toFixed(2);
     setTotalGrandTotal(fixedGrandTotal);
     setItemsToLocalStorage(product);
-    const getItemsOfLS = getItemsFromLocalStorage();
-    getItemsOfLS.map(getItem => {
-        console.log(getItem);
-    })  
 
 
     }
@@ -62,12 +75,6 @@ const CardsAndCalculations = () => {
     );
 };
 
-// const displayItemFromLS =()=>{
-//     const getItemsOfLS = getItemsFromLocalStorage();
-//     getItemsOfLS.map(getItem => {
-//         console.log(getItem);
-//     })
-// }
 
 
 export default CardsAndCalculations;

@@ -6,11 +6,7 @@ const getItemsFromLocalStorage = ()=>{
 
 const setItemsToLocalStorage =(product)=>{
     const ItemsOfLS = getItemsFromLocalStorage();
-    // console.log(product);
-    const {id, price, shipping} = product;
-    // console.log(id, price, shipping);
-   
-    ItemsOfLS.push({ "id":id,"price": price,"shipping": shipping });
+    ItemsOfLS.push(product.id);
     localStorage.setItem("Items", JSON.stringify(ItemsOfLS));
 }
 
