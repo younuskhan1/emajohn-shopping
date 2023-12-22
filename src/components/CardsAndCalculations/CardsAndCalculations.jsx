@@ -25,16 +25,22 @@ const CardsAndCalculations = () => {
         // console.log("called the useEffects", products.length);
         if(products.length > 0){
             const getItemsOfLS = getItemsFromLocalStorage();
-            let product = [];
+            let productOfLS = [];
             for (let id of getItemsOfLS){
                 // console.log(id);
                 const itemsLS = products.find(item=> item.id === id);
                 // console.log(itemsLS);
                 if(itemsLS){
-                 product.push(itemsLS);
+                    productOfLS.push(itemsLS);
                 }
             }
-            setNumberOfItems(product);
+            // console.log(productOfLS);
+            setNumberOfItems(productOfLS);
+            for (let item of productOfLS){
+                setTotalPrice(item.price);
+                setTotalShippingCharge(item.shipping);
+            }
+            // setTotalPrice(productOfLS.price)
         }   
     },[products])
 
@@ -57,7 +63,6 @@ const CardsAndCalculations = () => {
     const fixedGrandTotal = grandTotal.toFixed(2);
     setTotalGrandTotal(fixedGrandTotal);
     setItemsToLocalStorage(product);
-
 
     }
 
