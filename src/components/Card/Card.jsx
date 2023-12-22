@@ -1,6 +1,6 @@
 import './Card.css';
-const Card = ({product}) => {
-    console.log(product);
+const Card = ({product, cardHandleButton}) => {
+    // console.log(product);
     const {img, name, price, seller, ratings} = product;
     return (
         <div className='card-container' >
@@ -13,7 +13,7 @@ const Card = ({product}) => {
                     <p style={{textAlign:"left",fontSize:"18px", fontWeight:"bolder"}}> Ratings : {ratings} stars </p>
                 </div>   
             </div>
-            <p className='card-button'>Add To Cart <i className="fa-solid fa-cart-plus"></i></p>
+            <p className='card-button' onClick = {()=>cardHandleButton(product)}>Add To Cart <i className="fa-solid fa-cart-plus"></i></p>
         </div>
     );
 };
