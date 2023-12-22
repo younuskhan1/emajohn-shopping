@@ -5,6 +5,7 @@ import Cards from "../Cards/Cards";
 import './CardsAndCalculations.css';
 import { useEffect } from "react";
 import swal from "sweetalert";
+import {getItemsFromLocalStorage, setItemsToLocalStorage } from "../localStorage/localStorage";
 
 const CardsAndCalculations = () => {
     const [products, setProducts] = useState([]);
@@ -23,7 +24,7 @@ const CardsAndCalculations = () => {
     const cardHandleButton = (product)=>{
     // console.log(product);
         if (numberOfItems.includes(product.id)){
-            return swal("Sorry!", "You will not be able to add a product for twice simultaneously.", "error");
+            return swal("Sorry!", "You will not be able to add a product for twice simultaneously.", "info");
         }
     const numberOfProducts = [...numberOfItems, product.id];
     setNumberOfItems(numberOfProducts);
@@ -38,6 +39,13 @@ const CardsAndCalculations = () => {
     const grandTotal = price + shippingCharge + tax;
     const fixedGrandTotal = grandTotal.toFixed(2);
     setTotalGrandTotal(fixedGrandTotal);
+    setItemsToLocalStorage(product);
+    const getItemsOfLS = getItemsFromLocalStorage();
+    getItemsOfLS.map(getItem => {
+        console.log(getItem);
+    })  
+
+
     }
 
     return (
@@ -53,5 +61,13 @@ const CardsAndCalculations = () => {
         </div>
     );
 };
+
+// const displayItemFromLS =()=>{
+//     const getItemsOfLS = getItemsFromLocalStorage();
+//     getItemsOfLS.map(getItem => {
+//         console.log(getItem);
+//     })
+// }
+
 
 export default CardsAndCalculations;
