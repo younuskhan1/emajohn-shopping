@@ -6,7 +6,7 @@ const Calculations = ({totalPrice, numberOfItems, totalShippingCharge,totalTax,t
         <div className="calculation-container">
             <h2 style={{paddingTop:"20px", paddingBottom:"20px", color:"red", borderBottom:"3px solid white"}}>Order Summary</h2>
             <div className='text-summary-order'>
-                <p>Selected Items : $ {numberOfItems} </p>
+                <p>Selected Items : $ {numberOfItems.length} </p>
                 <p>Total Price : $ {totalPrice} </p>
                 <p>Total Shipping Charges : $ {totalShippingCharge} </p>
                 <p>Total Tax : $ {totalTax} </p>

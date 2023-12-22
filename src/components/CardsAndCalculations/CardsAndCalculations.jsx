@@ -7,8 +7,8 @@ import { useEffect } from "react";
 
 const CardsAndCalculations = () => {
     const [products, setProducts] = useState([]);
+    const [numberOfItems, setNumberOfItems] = useState([]);
     const [totalPrice, setTotalPrice] = useState(0);
-    const [numberOfItems, setNumberOfItems] =useState(0);
     const [totalShippingCharge, setTotalShippingCharge] = useState(0);
     const [totalTax, setTotalTax] = useState(0);
     const [totalGrandTotal, setTotalGrandTotal]= useState(0);
@@ -19,9 +19,12 @@ const CardsAndCalculations = () => {
         .then(data=> setProducts(data))
     }, []);
 
-    const cardHandleButton =(product)=>{
+    const cardHandleButton = (product)=>{
     // console.log(product);
-    const numberOfProducts = numberOfItems + 1;
+        if (numberOfItems.includes(product.id)){
+            return alert ("You cannot add a product twice");
+        }
+    const numberOfProducts = [...numberOfItems, product.id];
     setNumberOfItems(numberOfProducts);
     const price = totalPrice + product.price;
     setTotalPrice(price);
@@ -35,8 +38,6 @@ const CardsAndCalculations = () => {
     const fixedGrandTotal = grandTotal.toFixed(2);
     setTotalGrandTotal(fixedGrandTotal);
     }
-    // console.log(price);
-
 
     return (
         <div className="cards-and-calculations">
