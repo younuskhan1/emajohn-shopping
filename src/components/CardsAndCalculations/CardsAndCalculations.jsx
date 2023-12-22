@@ -4,6 +4,7 @@ import Calculations from "../Calculations/Calculations";
 import Cards from "../Cards/Cards";
 import './CardsAndCalculations.css';
 import { useEffect } from "react";
+import swal from "sweetalert";
 
 const CardsAndCalculations = () => {
     const [products, setProducts] = useState([]);
@@ -22,7 +23,7 @@ const CardsAndCalculations = () => {
     const cardHandleButton = (product)=>{
     // console.log(product);
         if (numberOfItems.includes(product.id)){
-            return alert ("You cannot add a product twice");
+            return swal("Sorry!", "You will not be able to add a product for twice simultaneously.", "error");
         }
     const numberOfProducts = [...numberOfItems, product.id];
     setNumberOfItems(numberOfProducts);
