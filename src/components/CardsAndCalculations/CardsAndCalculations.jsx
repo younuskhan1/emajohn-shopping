@@ -34,7 +34,7 @@ const CardsAndCalculations = () => {
                     productOfLS.push(itemsLS);
                 }
             }
-            // console.log(productOfLS);
+            console.log(productOfLS);
             setNumberOfItems(productOfLS);
 
             let lsTotalPrice=0;
@@ -46,9 +46,11 @@ const CardsAndCalculations = () => {
                 lsTotalShippingCharges = lsTotalShippingCharges + item.shipping;
                 setTotalShippingCharge(lsTotalShippingCharges);
                 const lsTotalTax = lsTotalPrice * .15;
-                setTotalTax(lsTotalTax);
+                const lsTotalTaxFixed = lsTotalTax.toFixed(2);
+                setTotalTax(lsTotalTaxFixed);
                 const lsGrandTotal = lsTotalPrice + lsTotalShippingCharges + lsTotalTax;
-                setTotalGrandTotal(lsGrandTotal);
+                const lsGrandTotalFixed = lsGrandTotal.toFixed(2);
+                setTotalGrandTotal(lsGrandTotalFixed);
 
             }
             // setTotalPrice(productOfLS.price)
@@ -57,10 +59,17 @@ const CardsAndCalculations = () => {
 
     const cardHandleButton = (product)=>{
     // console.log(product);
-        if (numberOfItems.includes(product.id)){
-            return swal("Sorry!", "You will not be able to add a product for twice simultaneously.", "info");
-        }
-    const numberOfProducts = [...numberOfItems, product.id];
+    // console.log(numberOfItems);
+    for (let items of numberOfItems){
+       if (items.id === product.id){
+        return swal("Sorry!", "You will not be able to add a product for twice simultaneously.", "info");
+       }
+    }
+       
+    const numberOfProducts = [...numberOfItems, product];
+    console.log(numberOfItems);
+    console.log(numberOfProducts);
+  
     setNumberOfItems(numberOfProducts);
     const price = totalPrice + product.price;
     setTotalPrice(price);
