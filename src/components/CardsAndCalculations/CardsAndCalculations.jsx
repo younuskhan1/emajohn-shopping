@@ -36,9 +36,20 @@ const CardsAndCalculations = () => {
             }
             // console.log(productOfLS);
             setNumberOfItems(productOfLS);
+
+            let lsTotalPrice=0;
+            let lsTotalShippingCharges = 0; 
+
             for (let item of productOfLS){
-                setTotalPrice(item.price);
-                setTotalShippingCharge(item.shipping);
+                lsTotalPrice = lsTotalPrice + item.price;
+                setTotalPrice(lsTotalPrice);
+                lsTotalShippingCharges = lsTotalShippingCharges + item.shipping;
+                setTotalShippingCharge(lsTotalShippingCharges);
+                const lsTotalTax = lsTotalPrice * .15;
+                setTotalTax(lsTotalTax);
+                const lsGrandTotal = lsTotalPrice + lsTotalShippingCharges + lsTotalTax;
+                setTotalGrandTotal(lsGrandTotal);
+
             }
             // setTotalPrice(productOfLS.price)
         }   
