@@ -1,3 +1,4 @@
+import { clearLocalStorage } from '../localStorage/localStorage';
 import './Calculations.css';
 
 const Calculations = ({totalPrice, numberOfItems, totalShippingCharge,totalTax,totalGrandTotal}) => {
@@ -12,7 +13,7 @@ const Calculations = ({totalPrice, numberOfItems, totalShippingCharge,totalTax,t
                 <p>Total Tax : $ {totalTax} </p>
                 <p style={{fontSize:"22px", paddingTop:"20px"}}>Grand Total : $ {totalGrandTotal} </p>
             </div>
-            <p className='clear-cart-button' style={{backgroundColor:"#FF3030", margin: "20px 0px"}}>Clear Cart <i className="fa-solid fa-trash-can"></i></p>
+            <p className='clear-cart-button' style={{backgroundColor:"#FF3030", margin: "20px 0px"}} onClick={clearLocalStorage}>Clear Cart <i className="fa-solid fa-trash-can"></i></p>
             <p className='review-order-button' style={{backgroundColor:"#FF9900"}}>Review Order <i className="fa-solid fa-arrow-right"></i></p>
         </div>
     );

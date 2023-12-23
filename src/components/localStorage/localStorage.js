@@ -10,5 +10,10 @@ const setItemsToLocalStorage =(product)=>{
     localStorage.setItem("Items", JSON.stringify(ItemsOfLS));
 }
 
+const clearLocalStorage = ()=>{
+    const getDataFromLS = getItemsFromLocalStorage();
+    localStorage.clear(getDataFromLS);
+    location.reload();
+}
 
-export{setItemsToLocalStorage, getItemsFromLocalStorage};
+export{setItemsToLocalStorage, getItemsFromLocalStorage,clearLocalStorage};
