@@ -74,7 +74,7 @@
 .dust-bin{
   color: red;
   cursor: pointer;
-  /* background-color: #ffff; */
+  background-color: #ffff;
 }
 .dust-bin:hover{
   color: maroon;

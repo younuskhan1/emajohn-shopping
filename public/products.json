@@ -93,7 +93,7 @@
   {
     "id": "c9d1f410-d28f-49d9-9b01-d759b5acbeea",
     "category": "Men's Sneaker",
-    "name": "ZX 1K BOOST SHOES",
+    "name": "ZX BOOST SHOES",
     "seller": "Addidas",
     "price": 319,
     "stock": 7,
@@ -106,7 +106,7 @@
   {
     "id": "1564a06b-692f-4f2e-8413-9c8a1cc2da77",
     "category": "Men's Sneaker",
-    "name": "NMD_R1 V2 SHOES",
+    "name": "NMD_R1 SHOES",
     "seller": "Addidas",
     "price": 260,
     "stock": 4,
@@ -119,7 +119,7 @@
   {
     "id": "ac44095f-230e-4502-8816-dea3eaae8320",
     "category": "Men's Sneaker",
-    "name": "NMD_R1 PRIMEBLUE SHOES",
+    "name": "NMD_R1 BLUE SHOES",
     "seller": "Addidas",
     "price": 437,
     "stock": 1,
@@ -145,7 +145,7 @@
   {
     "id": "8a5b4a9c-76ea-4fbb-9c70-9548de4eab01",
     "category": "Men's Pants",
-    "name": "TIRO 21 TRACK PANTS",
+    "name": "TIRO2 TRACK PANTS",
     "seller": "Addidas",
     "price": 109,
     "stock": 6,
@@ -158,7 +158,7 @@
   {
     "id": "b357e19b-4dd9-4fc7-b5c0-9ed5255464ba",
     "category": "Men's Pants",
-    "name": "PRIMEBLUE SST TRACK PANTS",
+    "name": "PRIME TRACK PANTS",
     "seller": "Addidas",
     "price": 63,
     "stock": 46,
@@ -171,7 +171,7 @@
   {
     "id": "e4220958-06d2-4d50-96fa-0163a563f43d",
     "category": "Men's Pants",
-    "name": "TIRO 21 TRACK PANTS",
+    "name": "TIRO 21 PANTS",
     "seller": "Addidas",
     "price": 148,
     "stock": 41,
@@ -184,7 +184,7 @@
   {
     "id": "ae69f0e4-559c-4b24-8032-80b63f9b5073",
     "category": "Men's Pants",
-    "name": "TIRO TRACK PANTS RED",
+    "name": "TRACK PANTS RED",
     "seller": "Addidas",
     "price": 122,
     "stock": 43,
@@ -197,7 +197,7 @@
   {
     "id": "dbf7ab3f-b383-4d95-8ab7-f55fcf6fa5f2",
     "category": "Men's Pants",
-    "name": "TIRO PANTS BLACK GOLD",
+    "name": "TIRO PANTS GOLD",
     "seller": "Addidas",
     "price": 115,
     "stock": 26,
@@ -210,7 +210,7 @@
   {
     "id": "ed6a7ac3-7e67-4e3f-8461-bceb5178be42",
     "category": "Men's Pants",
-    "name": "TAPERED-CUFF 3-STRIPES PANTS",
+    "name": "TAPERED STRIPES",
     "seller": "Addidas",
     "price": 108,
     "stock": 5,
@@ -223,7 +223,7 @@
   {
     "id": "fd52819a-cb78-4510-ad2f-c5bdd888ae78",
     "category": "Men's Pants",
-    "name": "FRENCH TERRY TAPERED CUFF LOGO PANTS",
+    "name": "FREN LOGO PANTS",
     "seller": "Addidas",
     "price": 189,
     "stock": 27,
@@ -236,7 +236,7 @@
   {
     "id": "c667d3ff-41eb-4cf7-a433-819d959ea768",
     "category": "Men's Pants",
-    "name": "OPEN HEM 3-STRIPES TRACK PANTS",
+    "name": "OPEN EM STRIPES",
     "seller": "Addidas",
     "price": 58,
     "stock": 41,
@@ -249,7 +249,7 @@
   {
     "id": "e1dbc7fe-be17-4e0f-9e2d-6ad5dbc102fc",
     "category": "Men's Pants",
-    "name": "ESSENTIALS4GAMEDAY PANTS",
+    "name": "Essential4 Pants",
     "seller": "Addidas",
     "price": 185,
     "stock": 43,
@@ -262,7 +262,7 @@
   {
     "id": "0298e695-1f9b-49b1-9961-8a8460f95b1c",
     "category": "Men's Boot",
-    "name": "TERREX FREE HIKER GORE-TEX HIKING SHOES",
+    "name": "Tex Hiking Shoes",
     "seller": "Addidas",
     "price": 132,
     "stock": 1,
@@ -275,7 +275,7 @@
   {
     "id": "3cfe9adc-c27f-4be4-a859-a5c98ce88a27",
     "category": "Men's Boot",
-    "name": "TERREX AX4 MID GORE-TEX HIKING SHOES",
+    "name": "TERREX AX4 GORE",
     "seller": "Addidas",
     "price": 111,
     "stock": 19,
@@ -288,7 +288,7 @@
   {
     "id": "6602468a-a3a8-4c2c-9d3a-fd54e2c5daf7",
     "category": "Men's Boot",
-    "name": "RESPONSE 3MC ADV BOOTS",
+    "name": "RES 3MC BOOTS",
     "seller": "Addidas",
     "price": 104,
     "stock": 6,
@@ -301,7 +301,7 @@
   {
     "id": "5db3ee2f-2eb7-4764-942d-894f72198e86",
     "category": "Men's Boot",
-    "name": "TACTICAL LEXICON ADV BOOTS",
+    "name": "TACTIC LEXCON ADV",
     "seller": "Addidas",
     "price": 151,
     "stock": 3,
@@ -327,7 +327,7 @@
   {
     "id": "fb1f9913-d903-498c-9e4a-16d363aa2eba",
     "category": "Men's Boot",
-    "name": "TACTICAL LEXICON ADV BOOTS",
+    "name": "LEX ADV BOOTS",
     "seller": "Addidas",
     "price": 199,
     "stock": 14,
@@ -340,7 +340,7 @@
   {
     "id": "fe48e340-4dc9-44b3-911b-9308b4f530b3",
     "category": "Men's Boot",
-    "name": "TERREX TRAILMAKER MID COLD.RDY HIKING SHOES",
+    "name": "TER TRMAKER MID",
     "seller": "Addidas",
     "price": 110,
     "stock": 16,
@@ -353,7 +353,7 @@
   {
     "id": "2e06fa90-2961-4867-8322-6fdcca2f086a",
     "category": "Men's Boot",
-    "name": "TERREX FREE HIKER GORE-TEX HIKING SHOES",
+    "name": "TER FREE HIKE",
     "seller": "Addidas",
     "price": 155,
     "stock": 4,
@@ -366,7 +366,7 @@
   {
     "id": "008c06dd-04e4-4923-b840-927bd6b4c2de",
     "category": "Men's Boot",
-    "name": "TERREX AGRAVIC TECH PRO TRAIL RUNNING SHOES",
+    "name": "TERRE AGRAV TECH",
     "seller": "Addidas",
     "price": 118,
     "stock": 8,
@@ -379,7 +379,7 @@
   {
     "id": "b4d83415-d20a-4bba-8629-22b2780b6e93",
     "category": "Men's Boot",
-    "name": "TERREX FREE HIKER COLD.RDY HIKING BOOTS",
+    "name": "TERREX FREE HIKER",
     "seller": "Addidas",
     "price": 169,
     "stock": 17,
@@ -405,7 +405,7 @@
   {
     "id": "1ce97e0e-3611-4406-8788-7b413640f59e",
     "category": "Men's Sneaker",
-    "name": "ADIDAS CAMO BOX GRAPHIC TEE",
+    "name": "CAMO BOX GRAPHIC",
     "seller": "Addidas",
     "price": 16,
     "stock": 10,
@@ -418,7 +418,7 @@
   {
     "id": "f088beb8-d664-4166-99f8-6995c2f08465",
     "category": "Men's Sneaker",
-    "name": "ADICOLOR CLASSICS TREFOIL TEE",
+    "name": "ADICOLOR CLASSICS",
     "seller": "Addidas",
     "price": 20,
     "stock": 12,
@@ -431,7 +431,7 @@
   {
     "id": "26dd7da8-c854-4bab-aaf5-32cc964da2ec",
     "category": "Men's Sneaker",
-    "name": "LNY TREFOIL FILL TEE",
+    "name": "LNY TREFOIL FILL",
     "seller": "Addidas",
     "price": 16,
     "stock": 17,
@@ -457,7 +457,7 @@
   {
     "id": "27cf3efa-7352-4889-85c4-44a4de2aa93a",
     "category": "Men's Sneaker",
-    "name": "OWN THE RUN LONG SLEEVE TEE",
+    "name": "OWN RUN LONG",
     "seller": "Addidas",
     "price": 23,
     "stock": 17,
@@ -470,7 +470,7 @@
   {
     "id": "6add9d60-1339-4115-b2ac-00d4886f4ad7",
     "category": "Men's Sneaker",
-    "name": "NYC BADGE OF SPORT LOGO GRAPHIC TEE",
+    "name": "NYC GRAPHIC TEE",
     "seller": "Addidas",
     "price": 29,
     "stock": 6,
@@ -483,7 +483,7 @@
   {
     "id": "1b6f1af1-2103-4838-932d-2b98dfdb6c1f",
     "category": "Men's Sneaker",
-    "name": "RUNNER TEE",
+    "name": "RUNNER TEE Sneaker",
     "seller": "Addidas",
     "price": 20,
     "stock": 7,
@@ -496,7 +496,7 @@
   {
     "id": "c6cb80a7-3542-4270-bd2b-920efd5f3f85",
     "category": "Men's Sneaker",
-    "name": "V-DAY TEE (GENDER NEUTRAL)",
+    "name": "V-Day (Gender Neutral)",
     "seller": "Addidas",
     "price": 18,
     "stock": 2,
@@ -509,7 +509,7 @@
   {
     "id": "f54a4763-b8c2-4922-ba8d-80652a64f5bc",
     "category": "Men's Sneaker",
-    "name": "ESSENTIALS COLORBLOCK TEE",
+    "name": "Essential Colorblock",
     "seller": "Addidas",
     "price": 35,
     "stock": 6,
@@ -743,7 +743,7 @@
   {
     "id": "5960bf40-9603-4a39-9ff6-6cf9f1ce4815",
     "category": "Cap",
-    "name": "UNISEX WASHED BUCKET",
+    "name": "Unisex Washed Bucket",
     "seller": "Addidas",
     "price": 27,
     "stock": 14,
@@ -808,7 +808,7 @@
   {
     "id": "1f56c0e5-4407-44bf-9225-90f592d2924a",
     "category": "Earphones",
-    "name": "Sport In-Ear Headphones",
+    "name": "Sport Ear Phones",
     "seller": "Addidas",
     "price": 185,
     "stock": 8,
@@ -925,7 +925,7 @@
   {
     "id": "afc5d640-9943-437a-b644-ba1f6f12baa9",
     "category": "Bottle",
-    "name": "Steel Straw Metal Bottle",
+    "name": "Steel Straw Metal",
     "seller": "Addidas",
     "price": 43,
     "stock": 10,
@@ -938,7 +938,7 @@
   {
     "id": "5b5c43d9-950d-4b9a-b7d9-ca489224a7b2",
     "category": "Bottle",
-    "name": "Steel Metal 600 ML",
+    "name": "Steel Metal ML",
     "seller": "Addidas",
     "price": 26,
     "stock": 20,

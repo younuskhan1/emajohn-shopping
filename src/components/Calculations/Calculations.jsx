@@ -12,7 +12,7 @@ const Calculations = ({totalPrice, numberOfItems, totalShippingCharge,totalTax,t
                 <p>Total Shipping Charges : $ {totalShippingCharge} </p>
                 <p>Total Tax : $ {totalTax} </p>
                 <p style={{fontSize:"22px", paddingTop:"20px"}}>Grand Total : $ {totalGrandTotal} </p>
-                <ol style={{paddingTop: "15px", fontSize: "16px", paddingRight: "15px"}}>
+                <ol style={{paddingTop: "15px", fontSize: "16px", paddingRight: "10px"}}>
                     {
                         cardTitle.map((title, idx) =>
                             <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}} key={idx}>{idx+1}. {title} <i className="dust-bin fa-solid fa-trash-can"></i></div>
