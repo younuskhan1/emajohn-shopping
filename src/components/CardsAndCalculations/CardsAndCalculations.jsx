@@ -67,8 +67,8 @@ const CardsAndCalculations = () => {
     }
        
     const numberOfProducts = [...numberOfItems, product];
-    console.log(numberOfItems);
-    console.log(numberOfProducts);
+    // console.log(numberOfItems);
+    // console.log(numberOfProducts);
   
     setNumberOfItems(numberOfProducts);
     const price = totalPrice + product.price;
