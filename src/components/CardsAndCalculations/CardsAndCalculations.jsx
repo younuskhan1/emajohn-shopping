@@ -52,6 +52,8 @@ const CardsAndCalculations = () => {
                 const lsGrandTotal = lsTotalPrice + lsTotalShippingCharges + lsTotalTax;
                 const lsGrandTotalFixed = lsGrandTotal.toFixed(2);
                 setTotalGrandTotal(lsGrandTotalFixed);
+                // setCardTitle(cardTitle);
+
 
             }
             // setTotalPrice(productOfLS.price)
