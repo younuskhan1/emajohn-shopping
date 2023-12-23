@@ -1,12 +1,12 @@
 .calculation-container{
     width: 25%;
     text-align: center;
-    height: 100vh;
+    height: auto;
     padding: 0px 15px;
     border-radius: 12px;
     background-color: #ee99194d;
-    position: sticky;
-    top: 20px;
+    /* position: sticky;
+    top: 20px; */
 }
 
 .text-summary-order{
@@ -60,6 +60,8 @@
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
+
 .fa-trash-can{
     margin-left: 15px;
     font-size: 20px;
@@ -67,6 +69,15 @@
 .fa-arrow-right{
     margin-left: 15px;
     font-size: 25px;
+}
+
+.dust-bin{
+  color: red;
+  cursor: pointer;
+  /* background-color: #ffff; */
+}
+.dust-bin:hover{
+  color: maroon;
 }
 
 @media screen and (max-width:769px){

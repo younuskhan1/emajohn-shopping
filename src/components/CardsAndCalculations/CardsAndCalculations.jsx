@@ -14,6 +14,7 @@ const CardsAndCalculations = () => {
     const [totalShippingCharge, setTotalShippingCharge] = useState(0);
     const [totalTax, setTotalTax] = useState(0);
     const [totalGrandTotal, setTotalGrandTotal]= useState(0);
+    const [cardTitle, setCardTitle] = useState([]);
 
     useEffect(() => {
         fetch('products.json')
@@ -82,7 +83,10 @@ const CardsAndCalculations = () => {
     const grandTotal = price + shippingCharge + tax;
     const fixedGrandTotal = grandTotal.toFixed(2);
     setTotalGrandTotal(fixedGrandTotal);
+    const cardName = [...cardTitle, product.name];
+    setCardTitle(cardName);
     setItemsToLocalStorage(product);
+    // console.log(cardTitle);
 
     }
 
@@ -95,6 +99,7 @@ const CardsAndCalculations = () => {
                 totalShippingCharge={totalShippingCharge}
                 totalTax={totalTax}
                 totalGrandTotal ={totalGrandTotal}
+                cardTitle = {cardTitle}
                 ></Calculations>
         </div>
     );
