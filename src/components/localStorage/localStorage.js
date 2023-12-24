@@ -15,17 +15,13 @@ const deleteSingleItem = (deletedId)=>{
     const getExistedItems = getItemsFromLocalStorage();
     // console.log(getExistedItems);
     const matchedItem = getExistedItems.filter(item => item !== deletedId);
-    // console.log(matchedItem);
     localStorage.setItem("Items", JSON.stringify(matchedItem));
     location.reload();
-    // console.log(getDeletedItem);
-    // localStorage.removeItem(getDeletedItem);
-    // location.reload();
 }
 
 const clearLocalStorage = ()=>{
-    const getDataFromLS = getItemsFromLocalStorage();
-    localStorage.clear(getDataFromLS);
+    // const getDataFromLS = getItemsFromLocalStorage();
+    localStorage.clear("Items");
     location.reload();
 }
 

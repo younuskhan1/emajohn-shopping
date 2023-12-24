@@ -39,7 +39,7 @@ const CardsAndCalculations = () => {
             // console.log(productOfLS);
             setNumberOfItems(productOfLS);
 
-            let lsTotalPrice=0;
+            let lsTotalPrice = 0;
             let lsTotalShippingCharges = 0; 
             // let lsCardTitleAndId = [];
             for (let item of productOfLS){
@@ -53,7 +53,6 @@ const CardsAndCalculations = () => {
                 const lsGrandTotal = lsTotalPrice + lsTotalShippingCharges + lsTotalTax;
                 const lsGrandTotalFixed = lsGrandTotal.toFixed(2);
                 setTotalGrandTotal(lsGrandTotalFixed);
-                // lsCardTitleAndId.push([...productOfLS]);
                 // console.log(productOfLS);
                 setProductForTitleAndId([...productOfLS]);
 
