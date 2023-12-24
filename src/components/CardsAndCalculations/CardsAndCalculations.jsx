@@ -114,6 +114,4 @@ const CardsAndCalculations = () => {
     );
 };
 
-
-
 export default CardsAndCalculations;

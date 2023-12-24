@@ -18,9 +18,9 @@ const Calculations = ({totalPrice, numberOfItems,
                 <ol style={{paddingTop: "15px", fontSize: "16px", paddingRight: "10px"}}>
                     {
                         productForTitleAndId.map((product, idx) =>
-                            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}} key={idx}>{idx+1}. {product.name} <i onClick={() => deletedItem(product.id)} className="dust-bin fa-solid fa-trash-can"></i></div>
-
-                        )
+                            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}
+                             key={idx}>{idx+1}. {product.name} <i onClick={() => deletedItem(product.id)} 
+                             className="dust-bin fa-solid fa-trash-can"></i></div>)
                     }
                 </ol>
             </div>
