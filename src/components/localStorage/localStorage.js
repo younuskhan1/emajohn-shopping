@@ -11,12 +11,10 @@ const setItemsToLocalStorage =(product)=>{
 }
 
 const deleteSingleItem = (deletedId)=>{
-    // console.log(deletedId);
     const getExistedItems = getItemsFromLocalStorage();
-    // console.log(getExistedItems);
     const matchedItem = getExistedItems.filter(item => item !== deletedId);
     localStorage.setItem("Items", JSON.stringify(matchedItem));
-    location.reload();
+    // location.reload();
 }
 
 const clearLocalStorage = ()=>{

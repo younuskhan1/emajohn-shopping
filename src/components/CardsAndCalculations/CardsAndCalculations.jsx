@@ -15,6 +15,7 @@ const CardsAndCalculations = () => {
     const [totalTax, setTotalTax] = useState(0);
     const [totalGrandTotal, setTotalGrandTotal]= useState(0);
     const [productForTitleAndId, setProductForTitleAndId] = useState([]);
+    
 
     useEffect(() => {
         fetch('products.json')
@@ -58,8 +59,15 @@ const CardsAndCalculations = () => {
 
             }
             // setTotalPrice(productOfLS.price)
-        }   
+        } 
+        
+   
+        
     },[products])
+
+    // useEffect(()=>{
+    //     localStorage.setItem("Items", JSON.stringify(numberOfItems.map(Items=> Items.id)))
+    // },[numberOfItems]);
 
     const cardHandleButton = (product)=>{
     // console.log(product);
@@ -94,6 +102,9 @@ const CardsAndCalculations = () => {
     }
 
     const deletedItem =(deletedId)=>{
+        const unDeletedItem = productForTitleAndId.filter(Item => Item.id !== deletedId);
+        setProductForTitleAndId([...unDeletedItem]);
+        console.log(unDeletedItem);
         deleteSingleItem(deletedId);
     }
 
