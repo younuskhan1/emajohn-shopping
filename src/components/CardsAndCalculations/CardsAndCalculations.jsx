@@ -5,7 +5,7 @@ import Cards from "../Cards/Cards";
 import './CardsAndCalculations.css';
 import { useEffect } from "react";
 import swal from "sweetalert";
-import {getItemsFromLocalStorage, setItemsToLocalStorage } from "../localStorage/localStorage";
+import {deleteSingleItem, getItemsFromLocalStorage, setItemsToLocalStorage } from "../localStorage/localStorage";
 
 const CardsAndCalculations = () => {
     const [products, setProducts] = useState([]);
@@ -36,7 +36,7 @@ const CardsAndCalculations = () => {
                     productOfLS.push(itemsLS);
                 }
             }
-            console.log(productOfLS);
+            // console.log(productOfLS);
             setNumberOfItems(productOfLS);
 
             let lsTotalPrice=0;
@@ -94,8 +94,8 @@ const CardsAndCalculations = () => {
 
     }
 
-    const deletedItem =(productId)=>{
-        console.log("deletedItems button", productId);
+    const deletedItem =(deletedId)=>{
+        deleteSingleItem(deletedId);
     }
 
     return (

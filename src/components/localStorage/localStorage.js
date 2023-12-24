@@ -10,10 +10,26 @@ const setItemsToLocalStorage =(product)=>{
     localStorage.setItem("Items", JSON.stringify(ItemsOfLS));
 }
 
+const deleteSingleItem = (deletedId)=>{
+    // console.log(deletedId);
+    const getExistedItems = getItemsFromLocalStorage();
+    // console.log(getExistedItems);
+    const matchedItem = getExistedItems.filter(item => item !== deletedId);
+    // console.log(matchedItem);
+    localStorage.setItem("Items", JSON.stringify(matchedItem));
+    location.reload();
+    // console.log(getDeletedItem);
+    // localStorage.removeItem(getDeletedItem);
+    // location.reload();
+}
+
 const clearLocalStorage = ()=>{
     const getDataFromLS = getItemsFromLocalStorage();
     localStorage.clear(getDataFromLS);
     location.reload();
 }
 
-export{setItemsToLocalStorage, getItemsFromLocalStorage,clearLocalStorage};
+export{setItemsToLocalStorage,
+     getItemsFromLocalStorage,
+     clearLocalStorage,
+     deleteSingleItem};
