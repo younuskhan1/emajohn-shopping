@@ -14,7 +14,7 @@ const CardsAndCalculations = () => {
     const [totalShippingCharge, setTotalShippingCharge] = useState(0);
     const [totalTax, setTotalTax] = useState(0);
     const [totalGrandTotal, setTotalGrandTotal]= useState(0);
-    const [cardTitle, setCardTitle] = useState([]);
+    const [productForTitleAndId, setProductForTitleAndId] = useState([]);
 
     useEffect(() => {
         fetch('products.json')
@@ -24,6 +24,7 @@ const CardsAndCalculations = () => {
 
     useEffect(()=>{
         // console.log("called the useEffects", products.length);
+       
         if(products.length > 0){
             const getItemsOfLS = getItemsFromLocalStorage();
             let productOfLS = [];
@@ -40,7 +41,7 @@ const CardsAndCalculations = () => {
 
             let lsTotalPrice=0;
             let lsTotalShippingCharges = 0; 
-
+            // let lsCardTitleAndId = [];
             for (let item of productOfLS){
                 lsTotalPrice = lsTotalPrice + item.price;
                 setTotalPrice(lsTotalPrice);
@@ -52,8 +53,9 @@ const CardsAndCalculations = () => {
                 const lsGrandTotal = lsTotalPrice + lsTotalShippingCharges + lsTotalTax;
                 const lsGrandTotalFixed = lsGrandTotal.toFixed(2);
                 setTotalGrandTotal(lsGrandTotalFixed);
-                // setCardTitle(cardTitle);
-
+                // lsCardTitleAndId.push([...productOfLS]);
+                // console.log(productOfLS);
+                setProductForTitleAndId([...productOfLS]);
 
             }
             // setTotalPrice(productOfLS.price)
@@ -69,7 +71,7 @@ const CardsAndCalculations = () => {
        }
     }
        
-    const numberOfProducts = [...numberOfItems, product];
+    const numberOfProducts = [ ...numberOfItems, product];
     // console.log(numberOfItems);
     // console.log(numberOfProducts);
   
@@ -85,11 +87,15 @@ const CardsAndCalculations = () => {
     const grandTotal = price + shippingCharge + tax;
     const fixedGrandTotal = grandTotal.toFixed(2);
     setTotalGrandTotal(fixedGrandTotal);
-    const cardName = [...cardTitle, product.name];
-    setCardTitle(cardName);
+    const productTitle = [...productForTitleAndId, product];
+    setProductForTitleAndId(productTitle);
     setItemsToLocalStorage(product);
     // console.log(cardTitle);
 
+    }
+
+    const deletedItem =(productId)=>{
+        console.log("deletedItems button", productId);
     }
 
     return (
@@ -101,7 +107,9 @@ const CardsAndCalculations = () => {
                 totalShippingCharge={totalShippingCharge}
                 totalTax={totalTax}
                 totalGrandTotal ={totalGrandTotal}
-                cardTitle = {cardTitle}
+                productForTitleAndId = {productForTitleAndId}
+                deletedItem = {deletedItem}
+                products={products}
                 ></Calculations>
         </div>
     );

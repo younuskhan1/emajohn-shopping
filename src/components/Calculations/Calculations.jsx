@@ -1,8 +1,11 @@
 import { clearLocalStorage } from '../localStorage/localStorage';
 import './Calculations.css';
 
-const Calculations = ({totalPrice, numberOfItems, totalShippingCharge,totalTax,totalGrandTotal, cardTitle}) => {
-    
+const Calculations = ({totalPrice, numberOfItems,
+    totalShippingCharge,totalTax,
+    totalGrandTotal, productForTitleAndId,
+    deletedItem}) => {
+
     return (
         <div className="calculation-container">
             <h2 style={{paddingTop:"20px", paddingBottom:"20px", color:"red", borderBottom:"3px solid white"}}>Order Summary</h2>
@@ -14,8 +17,8 @@ const Calculations = ({totalPrice, numberOfItems, totalShippingCharge,totalTax,t
                 <p style={{fontSize:"22px", paddingTop:"20px"}}>Grand Total : $ {totalGrandTotal} </p>
                 <ol style={{paddingTop: "15px", fontSize: "16px", paddingRight: "10px"}}>
                     {
-                        cardTitle.map((title, idx) =>
-                            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}} key={idx}>{idx+1}. {title} <i className="dust-bin fa-solid fa-trash-can"></i></div>
+                        productForTitleAndId.map((product, idx) =>
+                            <div style={{display: "flex", justifyContent: "space-between", alignItems: "center"}} key={idx}>{idx+1}. {product.name} <i onClick={() => deletedItem(product.id)} className="dust-bin fa-solid fa-trash-can"></i></div>
 
                         )
                     }
