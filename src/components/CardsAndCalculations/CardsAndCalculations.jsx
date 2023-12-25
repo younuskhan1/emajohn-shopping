@@ -65,10 +65,6 @@ const CardsAndCalculations = () => {
         
     },[products])
 
-    // useEffect(()=>{
-    //     localStorage.setItem("Items", JSON.stringify(numberOfItems.map(Items=> Items.id)))
-    // },[numberOfItems]);
-
     const cardHandleButton = (product)=>{
     // console.log(product);
     // console.log(numberOfItems);
@@ -101,12 +97,39 @@ const CardsAndCalculations = () => {
 
     }
 
-    const deletedItem =(deletedId)=>{
-        const unDeletedItem = productForTitleAndId.filter(Item => Item.id !== deletedId);
-        setProductForTitleAndId([...unDeletedItem]);
-        console.log(unDeletedItem);
-        deleteSingleItem(deletedId);
-    }
+const deletedItem =(deletedId)=>{
+    // console.log(deletedId);
+const unDeletedItem = productForTitleAndId.filter(Item => Item.id !== deletedId);
+//  console.log(unDeletedItem);
+deleteSingleItem(deletedId);
+setProductForTitleAndId(unDeletedItem);
+cartCalculationTask (unDeletedItem);
+
+}
+
+const cartCalculationTask = (productForTitleAndId) => {
+    let totalPrice = 0;
+    let totalShippingPrice = 0;
+    let totalTaxFixed = 0;
+    let grandTotalFixed = 0;
+  for (let item of productForTitleAndId){
+    totalPrice = totalPrice + item.price;
+    totalShippingPrice = totalShippingPrice + item.shipping;
+    const totalTax = totalPrice * .15;
+    totalTaxFixed = totalTax.toFixed(2);
+   
+    const grandTotal = totalPrice + totalShippingPrice + totalTax;
+    grandTotalFixed = grandTotal.toFixed(2);
+    
+
+  }
+  setNumberOfItems(productForTitleAndId);
+  setTotalPrice(totalPrice);
+  setTotalShippingCharge(totalShippingPrice)
+  setTotalTax(totalTaxFixed);
+  setTotalGrandTotal(grandTotalFixed);
+
+}
 
     return (
         <div className="cards-and-calculations">
@@ -119,7 +142,6 @@ const CardsAndCalculations = () => {
                 totalGrandTotal ={totalGrandTotal}
                 productForTitleAndId = {productForTitleAndId}
                 deletedItem = {deletedItem}
-                products={products}
                 ></Calculations>
         </div>
     );

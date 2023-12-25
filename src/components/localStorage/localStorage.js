@@ -14,7 +14,6 @@ const deleteSingleItem = (deletedId)=>{
     const getExistedItems = getItemsFromLocalStorage();
     const matchedItem = getExistedItems.filter(item => item !== deletedId);
     localStorage.setItem("Items", JSON.stringify(matchedItem));
-    // location.reload();
 }
 
 const clearLocalStorage = ()=>{
