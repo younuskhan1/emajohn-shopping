@@ -1,6 +1,6 @@
 
 const getItemsFromLocalStorage = ()=>{
-    return localStorage.getItem("Items") ?
+    return localStorage.getItem("Items") ?     
     JSON.parse(localStorage.getItem("Items")) : [];
 }
 
@@ -22,7 +22,9 @@ const clearLocalStorage = ()=>{
     location.reload();
 }
 
-export{setItemsToLocalStorage,
+export{
+     setItemsToLocalStorage,
      getItemsFromLocalStorage,
      clearLocalStorage,
-     deleteSingleItem};
+     deleteSingleItem,
+    };

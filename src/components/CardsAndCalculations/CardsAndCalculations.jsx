@@ -64,9 +64,7 @@ const CardsAndCalculations = () => {
 
             // }
         } 
-        
-   
-        
+           
     },[products])
 
     const cardHandleButton = (product)=>{
@@ -106,6 +104,8 @@ const CardsAndCalculations = () => {
     // console.log(cardTitle);
 
     }
+
+
 
 const deletedItem =(deletedId)=>{
     // console.log(deletedId);
@@ -156,5 +156,7 @@ const cartCalculationTask = (productForTitleAndId) => {
         </div>
     );
 };
+
+
 
 export default CardsAndCalculations;
