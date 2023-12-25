@@ -39,11 +39,11 @@ const CardsAndCalculations = () => {
             }
             // console.log(productOfLS);
             // setNumberOfItems(productOfLS);
-            
+
             setProductForTitleAndId(productOfLS);
             cartCalculationTask(productOfLS);
             
-        // did not delete the below code. Kept these codes for future learning 
+        // I did not delete the below codes. Kept these codes for future learning ......
 
             // let lsTotalPrice = 0;
             // let lsTotalShippingCharges = 0; 
@@ -79,21 +79,27 @@ const CardsAndCalculations = () => {
     }
        
     const numberOfProducts = [ ...numberOfItems, product];
+
     // console.log(numberOfItems);
     // console.log(numberOfProducts);
   
-    setNumberOfItems(numberOfProducts);
-    const price = totalPrice + product.price;
-    setTotalPrice(price);
-    const shippingCharge = totalShippingCharge + product.shipping;
-    setTotalShippingCharge(shippingCharge);
-    const tax = price * .15;
-    const fixedTax = tax.toFixed(2);
-    // const taxInNumber = parseFloat(fixedTax);
-    setTotalTax(fixedTax);
-    const grandTotal = price + shippingCharge + tax;
-    const fixedGrandTotal = grandTotal.toFixed(2);
-    setTotalGrandTotal(fixedGrandTotal);
+    cartCalculationTask(numberOfProducts);
+
+     // I did not delete the below codes. Kept these codes for future learning ......
+
+    // setNumberOfItems(numberOfProducts);
+    // const price = totalPrice + product.price;
+    // setTotalPrice(price);
+    // const shippingCharge = totalShippingCharge + product.shipping;
+    // setTotalShippingCharge(shippingCharge);
+    // const tax = price * .15;
+    // const fixedTax = tax.toFixed(2);
+    // // const taxInNumber = parseFloat(fixedTax);
+    // setTotalTax(fixedTax);
+    // const grandTotal = price + shippingCharge + tax;
+    // const fixedGrandTotal = grandTotal.toFixed(2);
+    // setTotalGrandTotal(fixedGrandTotal);
+
     const productTitle = [...productForTitleAndId, product];
     setProductForTitleAndId(productTitle);
     setItemsToLocalStorage(product);
