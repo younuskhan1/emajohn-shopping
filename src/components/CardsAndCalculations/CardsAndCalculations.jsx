@@ -38,26 +38,29 @@ const CardsAndCalculations = () => {
                 }
             }
             // console.log(productOfLS);
-            setNumberOfItems(productOfLS);
+            // setNumberOfItems(productOfLS);
+            setProductForTitleAndId([...productOfLS]);
+            cartCalculationTask(productOfLS);
+            
 
-            let lsTotalPrice = 0;
-            let lsTotalShippingCharges = 0; 
-            // let lsCardTitleAndId = [];
-            for (let item of productOfLS){
-                lsTotalPrice = lsTotalPrice + item.price;
-                setTotalPrice(lsTotalPrice);
-                lsTotalShippingCharges = lsTotalShippingCharges + item.shipping;
-                setTotalShippingCharge(lsTotalShippingCharges);
-                const lsTotalTax = lsTotalPrice * .15;
-                const lsTotalTaxFixed = lsTotalTax.toFixed(2);
-                setTotalTax(lsTotalTaxFixed);
-                const lsGrandTotal = lsTotalPrice + lsTotalShippingCharges + lsTotalTax;
-                const lsGrandTotalFixed = lsGrandTotal.toFixed(2);
-                setTotalGrandTotal(lsGrandTotalFixed);
-                // console.log(productOfLS);
-                setProductForTitleAndId([...productOfLS]);
+            // let lsTotalPrice = 0;
+            // let lsTotalShippingCharges = 0; 
+            // // let lsCardTitleAndId = [];
+            // for (let item of productOfLS){
+            //     lsTotalPrice = lsTotalPrice + item.price;
+            //     setTotalPrice(lsTotalPrice);
+            //     lsTotalShippingCharges = lsTotalShippingCharges + item.shipping;
+            //     setTotalShippingCharge(lsTotalShippingCharges);
+            //     const lsTotalTax = lsTotalPrice * .15;
+            //     const lsTotalTaxFixed = lsTotalTax.toFixed(2);
+            //     setTotalTax(lsTotalTaxFixed);
+            //     const lsGrandTotal = lsTotalPrice + lsTotalShippingCharges + lsTotalTax;
+            //     const lsGrandTotalFixed = lsGrandTotal.toFixed(2);
+            //     setTotalGrandTotal(lsGrandTotalFixed);
+            //     // console.log(productOfLS);
+            //     setProductForTitleAndId([...productOfLS]);
 
-            }
+            // }
             // setTotalPrice(productOfLS.price)
         } 
         
@@ -125,7 +128,7 @@ const cartCalculationTask = (productForTitleAndId) => {
   }
   setNumberOfItems(productForTitleAndId);
   setTotalPrice(totalPrice);
-  setTotalShippingCharge(totalShippingPrice)
+  setTotalShippingCharge(totalShippingPrice);
   setTotalTax(totalTaxFixed);
   setTotalGrandTotal(grandTotalFixed);
 
