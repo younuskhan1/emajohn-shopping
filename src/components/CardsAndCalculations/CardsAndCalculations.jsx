@@ -39,9 +39,11 @@ const CardsAndCalculations = () => {
             }
             // console.log(productOfLS);
             // setNumberOfItems(productOfLS);
-            setProductForTitleAndId([...productOfLS]);
+            
+            setProductForTitleAndId(productOfLS);
             cartCalculationTask(productOfLS);
             
+        // did not delete the below code. Kept these codes for future learning 
 
             // let lsTotalPrice = 0;
             // let lsTotalShippingCharges = 0; 
@@ -61,7 +63,6 @@ const CardsAndCalculations = () => {
             //     setProductForTitleAndId([...productOfLS]);
 
             // }
-            // setTotalPrice(productOfLS.price)
         } 
         
    
