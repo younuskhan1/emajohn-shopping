@@ -105,47 +105,46 @@ const CardsAndCalculations = () => {
 
     }
 
-const clearLocalStorage = ()=>{
-// console.log("clear the local storage");
-localStorage.clear("Items");
-cartCalculationTask([]);
-setProductForTitleAndId([]);
-}
+    const clearLocalStorage = ()=>{
+    // console.log("clear the local storage");
+    localStorage.clear("Items");
+    cartCalculationTask([]);
+    setProductForTitleAndId([]);
+    }
 
 
-const deletedItem =(deletedId)=>{
-    // console.log(deletedId);
-const unDeletedItem = productForTitleAndId.filter(Item => Item.id !== deletedId);
-//  console.log(unDeletedItem);
-deleteSingleItem(deletedId);
-setProductForTitleAndId(unDeletedItem);
-cartCalculationTask (unDeletedItem);
+    const deletedItem =(deletedId)=>{
+        // console.log(deletedId);
+    const unDeletedItem = productForTitleAndId.filter(Item => Item.id !== deletedId);
+    //  console.log(unDeletedItem);
+    deleteSingleItem(deletedId);
+    setProductForTitleAndId(unDeletedItem);
+    cartCalculationTask (unDeletedItem);
+    }
 
-}
-
-const cartCalculationTask = (productForTitleAndId) => {
-    let totalPrice = 0;
-    let totalShippingPrice = 0;
-    let totalTaxFixed = 0;
-    let grandTotalFixed = 0;
-  for (let item of productForTitleAndId){
-    totalPrice = totalPrice + item.price;
-    totalShippingPrice = totalShippingPrice + item.shipping;
-    const totalTax = totalPrice * .15;
-    totalTaxFixed = totalTax.toFixed(2);
-   
-    const grandTotal = totalPrice + totalShippingPrice + totalTax;
-    grandTotalFixed = grandTotal.toFixed(2);
+    const cartCalculationTask = (productForTitleAndId) => {
+        let totalPrice = 0;
+        let totalShippingPrice = 0;
+        let totalTaxFixed = 0;
+        let grandTotalFixed = 0;
+    for (let item of productForTitleAndId){
+        totalPrice = totalPrice + item.price;
+        totalShippingPrice = totalShippingPrice + item.shipping;
+        const totalTax = totalPrice * .15;
+        totalTaxFixed = totalTax.toFixed(2);
     
+        const grandTotal = totalPrice + totalShippingPrice + totalTax;
+        grandTotalFixed = grandTotal.toFixed(2);
+        
 
-  }
-  setNumberOfItems(productForTitleAndId);
-  setTotalPrice(totalPrice);
-  setTotalShippingCharge(totalShippingPrice);
-  setTotalTax(totalTaxFixed);
-  setTotalGrandTotal(grandTotalFixed);
+    }
+    setNumberOfItems(productForTitleAndId);
+    setTotalPrice(totalPrice);
+    setTotalShippingCharge(totalShippingPrice);
+    setTotalTax(totalTaxFixed);
+    setTotalGrandTotal(grandTotalFixed);
 
-}
+    }
 
     return (
         <div className="cards-and-calculations">
