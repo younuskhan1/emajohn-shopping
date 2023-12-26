@@ -1,10 +1,10 @@
-import { clearLocalStorage } from '../localStorage/localStorage';
+// import { clearLocalStorage } from '../localStorage/localStorage';
 import './Calculations.css';
 
 const Calculations = ({totalPrice, numberOfItems,
     totalShippingCharge,totalTax,
     totalGrandTotal, productForTitleAndId,
-    deletedItem}) => {
+    deletedItem, clearLocalStorage}) => {
 
     return (
         <div className="calculation-container">

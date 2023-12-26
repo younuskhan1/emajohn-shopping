@@ -16,15 +16,14 @@ const deleteSingleItem = (deletedId)=>{
     localStorage.setItem("Items", JSON.stringify(matchedItem));
 }
 
-const clearLocalStorage = ()=>{
-    // const getDataFromLS = getItemsFromLocalStorage();
-    localStorage.clear("Items");
-    location.reload();
-}
+// const clearLocalStorage = ()=>{
+//     // const getDataFromLS = getItemsFromLocalStorage();
+//     localStorage.clear("Items");
+//     location.reload();
+// }
 
 export{
      setItemsToLocalStorage,
      getItemsFromLocalStorage,
-     clearLocalStorage,
      deleteSingleItem,
     };

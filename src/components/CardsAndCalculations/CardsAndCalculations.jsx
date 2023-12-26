@@ -67,7 +67,7 @@ const CardsAndCalculations = () => {
            
     },[products])
 
-    const cardHandleButton = (product)=>{
+    const cardHandleButton = (product) =>{
     // console.log(product);
     // console.log(numberOfItems);
     for (let items of numberOfItems){
@@ -105,6 +105,12 @@ const CardsAndCalculations = () => {
 
     }
 
+const clearLocalStorage = ()=>{
+// console.log("clear the local storage");
+localStorage.clear("Items");
+cartCalculationTask([]);
+setProductForTitleAndId([]);
+}
 
 
 const deletedItem =(deletedId)=>{
@@ -152,11 +158,11 @@ const cartCalculationTask = (productForTitleAndId) => {
                 totalGrandTotal ={totalGrandTotal}
                 productForTitleAndId = {productForTitleAndId}
                 deletedItem = {deletedItem}
+                clearLocalStorage= {clearLocalStorage}
                 ></Calculations>
         </div>
     );
 };
-
 
 
 export default CardsAndCalculations;
